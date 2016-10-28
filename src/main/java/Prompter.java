@@ -4,6 +4,7 @@ public class Prompter {
 
 	private static final Scanner input = new Scanner(System.in);
 
+	// Gather administrative data from user
 	public Jar getAdministrativeInfo() {
 		System.out.println("ADMINISTRATOR SETUP\n===================");
 		System.out.print("Name of items in Jar: ");

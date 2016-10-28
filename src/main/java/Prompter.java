@@ -13,6 +13,14 @@ public class Prompter {
 		int capacity = input.nextInt();
 		return new Jar(name, capacity);
 	}
+
+	public void displayPlayerWelcomeInfo(Jar jar) {
+		System.out.println("PLAYER STARTS THE GAME\n===================");
+		System.out.println("How many " + jar.getItemName() + " are in the jar?"
+				+ " Pick a number between 1 and " 
+				+ jar.getMaxCapacity() + ".");
+		
+	}
 	
 	
 }

@@ -12,5 +12,10 @@ public class Game {
     	
     	// fill the jar with random amount of items
     	jar.fill(randomNumbers.nextInt(1 + jar.getMaxCapacity()));
+    	
+    	// Prompt starting information for user
+    	prompter.displayPlayerWelcomeInfo(jar);
+    	
+    	
     }
 }

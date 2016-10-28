@@ -32,6 +32,7 @@ public class Prompter {
 		int userInput = input.nextInt();
 		while (userInput > max){
 			System.out.println("Your guess must be less than " + max);
+			System.out.print("Guess: ");
 			userInput = input.nextInt();
 		}
 		return userInput;
@@ -39,7 +40,7 @@ public class Prompter {
 
 	// Display summary information for user
 	public void displayFinalScore(int guessCount, Jar jar) {
-		System.out.println("Congratulations! You guest that there was " + jar.getNumberOfItemsInside() + " of "
+		System.out.println("Congratulations! You guessed that there was " + jar.getNumberOfItemsInside() + " of "
 				+ jar.getItemName() + " in the jar! It took you " + guessCount + " guess(es) to get it right.");
 		
 	}

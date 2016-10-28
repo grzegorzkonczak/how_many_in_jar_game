@@ -36,6 +36,12 @@ public class Prompter {
 				+ jar.getItemName() + " in the jar! It took you " + guessCount + " guess(es) to get it right.");
 		
 	}
+
+	// Give player direction (lower/higher) about guess
+	public void encuragePlayer(String direction) {
+		System.out.println("You should try guessing " + direction);
+		
+	}
 	
 	
 }

@@ -22,6 +22,11 @@ public class Game {
     	int guess = 0;
     	while (guess != jar.getNumberOfItemsInside()){
     		guess = prompter.getUserGuess();
+    		if(guess > jar.getNumberOfItemsInside()){
+    			prompter.encuragePlayer("lower");
+    		} else if(guess < jar.getNumberOfItemsInside()){
+    			prompter.encuragePlayer("higher");
+    		}
     		guessCount++;
     	}
     	

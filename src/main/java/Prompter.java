@@ -25,9 +25,15 @@ public class Prompter {
 	}
 
 	// Display guess prompt and return user guess
-	public int getUserGuess() {
+	// Prevents guessing above max capacity
+	public int getUserGuess(int max) {
 		System.out.print("\nGuess: ");
-		return input.nextInt();
+		int userInput = input.nextInt();
+		while (userInput > max){
+			System.out.println("Your guess must be less than " + max);
+			userInput = input.nextInt();
+		}
+		return userInput;
 	}
 
 	// Display summary information for user

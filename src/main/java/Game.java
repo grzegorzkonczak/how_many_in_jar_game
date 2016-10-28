@@ -16,6 +16,10 @@ public class Game {
     	// Prompt starting information for user
     	prompter.displayPlayerWelcomeInfo(jar);
     	
-    	
+    	// Ask user to guess correct number until the guess is correct
+    	int guess = 0;
+    	while (guess != jar.getNumberOfItemsInside()){
+    		guess = prompter.getUserGuess();
+    	}
     }
 }

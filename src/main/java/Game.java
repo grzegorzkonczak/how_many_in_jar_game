@@ -17,9 +17,14 @@ public class Game {
     	prompter.displayPlayerWelcomeInfo(jar);
     	
     	// Ask user to guess correct number until the guess is correct
+    	// Keep track how many times user guessed
+    	int guessCount = 0;
     	int guess = 0;
     	while (guess != jar.getNumberOfItemsInside()){
     		guess = prompter.getUserGuess();
+    		guessCount++;
     	}
+    	
+    	prompter.displayFinalScore(guessCount, jar);
     }
 }

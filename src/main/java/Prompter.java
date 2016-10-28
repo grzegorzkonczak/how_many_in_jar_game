@@ -29,6 +29,13 @@ public class Prompter {
 		System.out.print("\nGuess: ");
 		return input.nextInt();
 	}
+
+	// Display summary information for user
+	public void displayFinalScore(int guessCount, Jar jar) {
+		System.out.println("Congratulations! You guest that there was " + jar.getNumberOfItemsInside() + " of "
+				+ jar.getItemName() + " in the jar! It took you " + guessCount + " guess(es) to get it right.");
+		
+	}
 	
 	
 }

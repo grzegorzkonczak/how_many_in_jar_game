@@ -26,6 +26,10 @@ public class Game {
     			prompter.encuragePlayer("lower");
     		} else if(guess < jar.getNumberOfItemsInside()){
     			prompter.encuragePlayer("higher");
+    		} else if (guess > jar.getMaxCapacity()){
+    			System.out.println("Your guess must be less than " + jar.getMaxCapacity());
+    			System.out.print("Guess: ");
+    			continue;
     		}
     		guessCount++;
     	}

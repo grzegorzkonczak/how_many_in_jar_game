@@ -30,11 +30,6 @@ public class Prompter {
 	public int getUserGuess(int max) {
 		System.out.print("\nGuess: ");
 		int userInput = input.nextInt();
-		while (userInput > max){
-			System.out.println("Your guess must be less than " + max);
-			System.out.print("Guess: ");
-			userInput = input.nextInt();
-		}
 		return userInput;
 	}
 

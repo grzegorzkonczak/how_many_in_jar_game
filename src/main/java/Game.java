@@ -22,14 +22,13 @@ public class Game {
     	int guess = 0;
     	while (guess != jar.getNumberOfItemsInside()){
     		guess = prompter.getUserGuess(jar.getMaxCapacity());
-    		if(guess > jar.getNumberOfItemsInside()){
-    			prompter.encuragePlayer("lower");
+    		if(guess > jar.getMaxCapacity() || guess < 1){
+    			System.out.println("Your guess must be less than " + jar.getMaxCapacity() + "and more then 1.\nTry again");
+    			continue;
     		} else if(guess < jar.getNumberOfItemsInside()){
     			prompter.encuragePlayer("higher");
-    		} else if (guess > jar.getMaxCapacity()){
-    			System.out.println("Your guess must be less than " + jar.getMaxCapacity());
-    			System.out.print("Guess: ");
-    			continue;
+    		} else if (guess > jar.getNumberOfItemsInside()){
+    			prompter.encuragePlayer("lower");
     		}
     		guessCount++;
     	}

@@ -7,7 +7,7 @@ public class Jar {
 	
 	public Jar(String itemName, int maxCapacity) {
 		this.itemName = itemName;
-		if (maxCapacity == 0){
+		if (maxCapacity <= 0){
 			this.maxCapacity = 1;
 		} else {
 			this.maxCapacity = maxCapacity;

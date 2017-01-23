@@ -8,7 +8,7 @@ Stories were as noted bellow:
 item will be stored in the jar as well as the total how many could
 reasonably fit in jar, so that the game stays in the bounds of reality.
 
-2.As a player of the game, each game I should be presented with a randomly
+2. As a player of the game, each game I should be presented with a randomly
 filled jar so that I can play multiple games and it is still
 challenging.
 
